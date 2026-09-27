@@ -1,0 +1,64 @@
+### IntelliJ IDEA ###
+.idea/
+*.iml
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.kotlin
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+### Maven ###
+target/
+.tools/
+
+### Local environment and credentials ###
+.env
+.env.*
+!.env.example
+!.env.sample
+secrets/
+credentials.json
+credentials-*.json
+settings.xml
+settings-security.xml
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_ed25519
+
+### Generated files and logs ###
+*.class
+*.log
+hs_err_pid*
+replay_pid*
+
+### Windows ###
+Thumbs.db
+Desktop.ini
