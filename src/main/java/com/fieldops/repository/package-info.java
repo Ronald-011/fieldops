@@ -1,2 +1,2 @@
-/** In-memory storage will be implemented in later stages. */
+/** In-memory storage for FieldOps entities. */
 package com.fieldops.repository;

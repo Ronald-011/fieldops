@@ -4,7 +4,9 @@ import com.fieldops.enums.EmployeeStatus;
 import com.fieldops.enums.JobRole;
 import com.fieldops.enums.WorkShift;
 
+// Entidade que representa um colaborador do FieldOps.
 public class Employee {
+    // Atributos principais do colaborador.
     private final long id;
     private final String name;
     private final String registration;
@@ -14,6 +16,7 @@ public class Employee {
 
     public Employee(long id, String name, String registration, JobRole role,
                     WorkShift workShift, EmployeeStatus status) {
+        // Validacoes basicas para impedir a criacao de um colaborador invalido.
         if (id <= 0) {
             throw new IllegalArgumentException("Employee ID must be positive.");
         }
@@ -27,6 +30,7 @@ public class Employee {
             throw new IllegalArgumentException("Employee status is required.");
         }
 
+        // Atribui os valores validados aos atributos do objeto.
         this.id = id;
         this.name = requireText(name, "Name");
         this.registration = requireText(registration, "Registration");
@@ -35,6 +39,7 @@ public class Employee {
         this.status = status;
     }
 
+    // Reaproveita a mesma regra para validar textos obrigatorios.
     private static String requireText(String value, String fieldName) {
         if (value == null || value.isBlank()) {
             throw new IllegalArgumentException(fieldName + " must not be blank.");
@@ -42,6 +47,7 @@ public class Employee {
         return value.strip();
     }
 
+    // Getters permitem consultar os dados sem alterar o objeto.
     public long getId() {
         return id;
     }

@@ -1,2 +1,2 @@
-/** Business operations and rules will be implemented in later stages. */
+/** Business operations and rules for FieldOps workflows. */
 package com.fieldops.service;
